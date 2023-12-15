@@ -31,6 +31,16 @@ if (file == NULL)
 fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 exit(EXIT_FAILURE);
 }
+/*Checking for empty file*/
+fseek(file, 0, SEEK_END);
+if (ftell(file) == 0)
+{
+fprintf(stderr, "Error: File %s is empty\n", argv[1]);
+fclose(file);
+exit(EXIT_FAILURE);
+}
+rewind(file);
+
 while (fgets(str, sizeof(str), file) != NULL)
 {
 opcode = strtok(str, " \t\n");
