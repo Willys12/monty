@@ -2,6 +2,7 @@
 
 void push(stack_t **stack, unsigned int line_number);
 void swap(stack_t **stack, unsigned int line_number);
+void div_func(stack_t **stack, unsigned int line_number);
 void rotl(stack_t **stack, unsigned int line_number);
 void rotr(stack_t **stack, unsigned int line_number);
 void sub(stack_t **stack, unsigned int line_number);
@@ -74,6 +75,10 @@ swap(&stack, line_number);
 else if (strcmp(opcode, "pop") == 0)
 {
 pop(&stack, line_number);
+}
+else if (strcmp(opcode, "div") == 0)
+{
+div_func(&stack, line_number);
 }
 else if (strcmp(opcode, "pint") == 0)
 {
