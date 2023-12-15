@@ -1,9 +1,8 @@
 #include "monty.h"
 /*
-* pall -
+* pall - Prints all elements of stack.
 * @stack: A pointer to the top of the element.
 * @line_number: Current line number.
-* Return: Nothing.
 */
 void pall(stack_t **stack)
 {

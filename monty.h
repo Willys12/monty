@@ -8,6 +8,7 @@
 #include <stdbool.h>
 #include <unistd.h>
 
+#define MAX_LINE 1024
 /*The structure*/
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -42,5 +43,7 @@ typedef struct instruction_s
 /*Prototypes*/
 
 void push(stack_t **stack, unsigned int line_number);
-void pall(stack_t **stack, unsigned int line_number);
+void pall(stack_t **stack);
+int is_valid_int(const char *str);
+
 #endif
