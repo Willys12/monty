@@ -15,7 +15,6 @@ int n;
 FILE *file = NULL;
 unsigned int line_number = 1;
 char str[MAX_LINE];
-size_t len = 0;
 stack_t *stack = NULL;
 char *opcode;
 char *arg;
