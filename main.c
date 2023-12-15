@@ -2,6 +2,8 @@
 
 void push(stack_t **stack, unsigned int line_number);
 void swap(stack_t **stack, unsigned int line_number);
+void rotl(stack_t **stack, unsigned int line_number);
+void rotr(stack_t **stack, unsigned int line_number);
 void pop(stack_t **stack, unsigned int line_number);
 void add(stack_t **stack, unsigned int line_number);
 void nop(stack_t **stack, unsigned int line_number);
@@ -83,6 +85,14 @@ add(&stack, line_number);
 else if (strcmp(opcode, "nop") == 0)
 {
 nop(&stack, line_number);
+}
+else if (strcmp(opcode, "rotr") == 0)
+{
+rotr(&stack, line_number);
+}
+else if (strcmp(opcode, "rotl") == 0)
+{
+rotl(&stack, line_number);
 }
 else
 {
