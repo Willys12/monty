@@ -4,6 +4,7 @@ void push(stack_t **stack, unsigned int line_number);
 void swap(stack_t **stack, unsigned int line_number);
 void pop(stack_t **stack, unsigned int line_number);
 void add(stack_t **stack, unsigned int line_number);
+void nop(stack_t **stack, unsigned int line_number);
 void pall(stack_t **stack);
 int is_valid_int(const char *str);
 
@@ -78,6 +79,10 @@ pint(&stack, line_number);
 else if (strcmp(opcode, "add") == 0)
 {
 add(&stack, line_number);
+}
+else if (strcmp(opcode, "nop") == 0)
+{
+nop(&stack, line_number);
 }
 else
 {
