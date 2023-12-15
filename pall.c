@@ -5,7 +5,7 @@
 * @line_number: Current line number.
 * Return: Nothing.
 */
-void pall(stack_t **stack, unsigned int line_number)
+void pall(stack_t **stack)
 {
 stack_t *temp = *stack;
 
