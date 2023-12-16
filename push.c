@@ -15,10 +15,11 @@ exit(EXIT_FAILURE);
 }
 (*new_node).n = line_number;
 (*new_node).prev = NULL;
-(*new_node).next = *stack;
+(*new_node).next = NULL;
 if (*stack != NULL)
 {
 (*stack)->prev = new_node;
 }
+(*new_node).next = *stack;
 *stack = new_node;
 }
