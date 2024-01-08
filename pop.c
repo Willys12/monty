@@ -1,6 +1,6 @@
 #include "monty.h"
 
-/*
+/**
  * pop - Removes the top element from the stack.
  * @stack: A pointer to the top of the stack.
  * @line_number: Current line number.

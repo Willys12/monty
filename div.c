@@ -1,6 +1,6 @@
 #include "monty.h"
 
-/*
+/**
  * div_op - Divides the second top element of the stack.
  * @stack: A pointer to the top of the stack.
  * @line_number: Current line number.

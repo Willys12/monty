@@ -1,10 +1,10 @@
 #include "monty.h"
-/*
-* push - Adds new elements on top of stack.
-* @stack: A pointer to the top of the element.
-* @line_number: Current line number.
-* Return: Nothing.
-*/
+/**
+ * push - Adds new elements on top of stack.
+ * @stack: A pointer to the top of the element.
+ * @line_number: Current line number.
+ * Return: Nothing.
+ */
 void push(stack_t **stack, unsigned int line_number)
 {
 stack_t *new_node = malloc(sizeof(stack_t));
