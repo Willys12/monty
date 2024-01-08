@@ -12,7 +12,7 @@ void nop(stack_t **stack, unsigned int line_number);
 void pall(stack_t **stack);
 int is_valid_int(const char *str);
 
-/*
+/**
 * main - Entry point.
 * @argc: Number of command line arguments.
 * @argv: Array of command line arguments.
@@ -114,7 +114,7 @@ line_number++;
 fclose(file);
 return (0);
 }
-/*
+/**
 *is_valid_int - Checks if the string is a valid integer.
 * @str: The string to be checked.
 * Return: 0 on success otherwise 1.
